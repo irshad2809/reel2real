@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  height: 100%;
+  background: #161415 url(flashlight-924099_1920.jpg) no-repeat center center
+    fixed;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  background-size: cover !important;
+  font-family: "Orbitron", sans-serif;
+  /* font-family: digital; */
+  text-align: center
+}
+@font-face {
+  font-family: "digital";
+  src: url(digital-7.regular.ttf);
+  
+}
+.logo{
+        filter: invert(1);
+}
+.loader {
+      position: fixed;
+    top: 12vh;
+    left: 12vw;
+    height: 100vh;
+    width: 100%;
+}
+.Rec {
+  width: 35px;
+  height: 35px;
+  font-size: 0;
+  background-color: red;
+  border: 0;
+  border-radius: 35px;
+  margin: 18px;
+  outline: none;
+  animation-name: pulse;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0px 0px 3px 0px rgba(173, 0, 0, 0.95);
+    background-color: rgba(255, 0, 0, 0.9)
+  }
+
+  65% {
+    box-shadow: 0px 0px 3px 13px rgba(173, 0, 0, 0.4);
+    background-color: rgba(255, 0, 0, 0.4)
+  }
+
+  90% {
+    box-shadow: 0px 0px 3px 13px rgba(173, 0, 0, 0.31);
+    background-color: rgba(255, 0, 0, 0.3)
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 60px;
+}
+
+.frame {
+  background: linear-gradient(to right, white 4px, transparent 4px) 0 0,
+    linear-gradient(to right, white 4px, transparent 4px) 0 100%,
+    linear-gradient(to left, white 4px, transparent 4px) 100% 0,
+    linear-gradient(to left, white 4px, transparent 4px) 100% 100%,
+    linear-gradient(to bottom, white 4px, transparent 4px) 0 0,
+    linear-gradient(to bottom, white 4px, transparent 4px) 100% 0,
+    linear-gradient(to top, white 4px, transparent 4px) 0 100%,
+    linear-gradient(to top, white 4px, transparent 4px) 100% 100%;
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-size: 100px 100px;
+}
+
+#count-down {
+    font-size: 2.2rem;
+    color: #fff;
+    background: #070707a1;
+    padding: 20px;
+}
+.holder {
+    display: inline-block;
+        margin: 0 20px;
+}
+
+em {
+    display: block;
+    font-size: 13px;
+}
